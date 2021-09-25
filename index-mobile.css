@@ -1,0 +1,133 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(./Montserrat/Montserrat-Regular.ttf);
+}
+.container {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+#email-container {
+  margin: 20px;
+  position: relative;
+  background: linear-gradient(180deg, #ffffff -0.01%, #efefef 100%) !important;
+  /* width: 100% !important; */
+  min-height: 453px !important;
+  border: 3px solid transparent;
+  display: flex;
+  border-radius: 8px;
+  flex-direction: column;
+}
+
+#close-btn {
+  background: linear-gradient(90deg, #ffffff 0%, #efefef 100%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 100;
+  right: -18px;
+  top: -18px;
+  display: grid;
+  opacity: 0;
+  align-items: center;
+  justify-content: center;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 29px;
+  color: #00a0b1;
+  transition: opacity 0.2s linear;
+}
+
+#email-container:hover > #close-btn {
+  opacity: 100;
+  transition: opacity 0.2s linear;
+}
+
+.email-image-container {
+  min-height: 160px;
+  background: linear-gradient(126.37deg, #666e95 44.01%, #00a0b1 98.05%);
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.email-image {
+}
+
+.email-input-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column-reverse;
+  background: linear-gradient(180deg, #d6e8f5 0%, #ffffff 100%);
+  padding: 16.9px;
+  align-items: center;
+}
+
+.email-input-title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 38.5915px;
+  line-height: 47px;
+  color: #00a0b1;
+}
+
+.email-input-subtitle {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 8px;
+  line-height: 10px;
+  text-align: center;
+  color: #6d5147;
+  padding-bottom: 29px;
+  width: 80%;
+}
+
+.email-input {
+  border: none;
+  min-height: 30px;
+  width: 50%;
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 16.23px;
+}
+
+.email-input::placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 9.33333px;
+  line-height: 11px;
+  color: #99d6d6 !important;
+}
+
+.transformation {
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.email-btn {
+  cursor: pointer;
+  min-height: 40px;
+  min-width: 116px;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #00a0b1 0%, #666e95 55.11%, #666e95 100%)
+      padding-box,
+    linear-gradient(90deg, #666e95 0%, #666e95 44.89%, #00a0b1 100%) border-box;
+  padding: 10px;
+  border: 2.31px solid transparent;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15.5133px;
+  line-height: 19px;
+  color: #ffffff;
+  margin-bottom: 22.41px;
+}
+
+.inherit-transform {
+  transform: inherit;
+}
